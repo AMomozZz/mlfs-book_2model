@@ -4,7 +4,7 @@ This project is based on the O'Reilly book "Building Machine Learning Systems wi
 
 ## ML System Examples
 
-Explore the dashboards for example ML systems [here](https://amomozzz.github.io/mlfs-book/).
+Explore the dashboards for example ML systems [here](https://github.com/AMomozZz/mlfs-book).
 
 For air quality prediction, here’s another example where all predictions are generated using a single model. [here](https://amomozzz.github.io/mlfs-book/).
 
