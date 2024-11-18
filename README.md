@@ -6,6 +6,8 @@ This project is based on the O'Reilly book "Building Machine Learning Systems wi
 
 Explore the dashboards for example ML systems [here](https://amomozzz.github.io/mlfs-book/).
 
+For air quality prediction, here’s another example where all predictions are generated using a single model. [here](https://amomozzz.github.io/mlfs-book/).
+
 ## Course Comparison
 
 | Course                         | MLOps | LLMs             | Feature/Training/Inference | Working AI Systems | Focus |
