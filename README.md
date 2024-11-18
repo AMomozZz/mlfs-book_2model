@@ -30,7 +30,7 @@ For air quality prediction, here’s another example where all predictions are g
 1. Clone the repository:
     ```sh
     git clone https://github.com/your-repo/mlfs-book.git
-    cd mlfs-book
+    cd mlfs-book_2model
     ```
 
 2. Install the required dependencies:
