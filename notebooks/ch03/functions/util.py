@@ -4,6 +4,7 @@ import time
 import requests
 import pandas as pd
 import json
+from sklearn.metrics import r2_score, mean_squared_error
 from geopy.geocoders import Nominatim
 from geopy.exc import GeocoderUnavailable
 import matplotlib.pyplot as plt
@@ -281,6 +282,16 @@ def plot_air_quality_forecast(city: str, street: str, df: pd.DataFrame, file_pat
         ax.plot(day, df['pm25'], label='Actual PM2.5', color='black', linewidth=2, marker='^', markersize=5, markerfacecolor='grey')
         legend2 = ax.legend(loc='upper left', fontsize='x-small')
         ax.add_artist(legend1)
+
+        r2 = r2_score(df['pm25'], df['predicted_pm25'])
+        mse = mean_squared_error(df['pm25'], df['predicted_pm25'])
+
+        # Display metrics on the plot
+        text_x = 0.01
+        text_y = 0.02
+        ax.text(text_x, text_y, f"$R^2$: {r2:.3f}\nMSE: {mse:.2f}", transform=ax.transAxes, fontsize=10,
+                bbox=dict(facecolor='white', alpha=0.7, edgecolor='black'))
+
 
     # Ensure everything is laid out neatly
     plt.tight_layout()
